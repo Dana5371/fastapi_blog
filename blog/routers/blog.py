@@ -1,7 +1,5 @@
-import re
-from fastapi import APIRouter, HTTPException, Response, status, Depends
-import schemas,models
-from database import SessionLocal
+from fastapi import APIRouter,Response,status, Depends
+import schemas
 from sqlalchemy.orm import Session
 from typing import List
 from database import get_db

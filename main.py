@@ -14,7 +14,6 @@ def index(limit=100, published: bool = True, sort: Optional[str] = None):
         return {'data': f'{limit} blogs from the db'}
 
 
-
 @app.get("/blog/unpublished")
 def unpublished():
     return {'data': "all unpublished blogs"}
