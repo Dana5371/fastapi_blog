@@ -7,7 +7,7 @@ from repository import blog
 
 
 router = APIRouter(
-    tags=['blogs']
+    tags=['Blogs']
 )
 
 
@@ -16,7 +16,7 @@ def create(request: schemas.Blog, db: Session = Depends(get_db)):
     return blog.create(request, db)
 
 
-@router.get('/blog', response_model=List[schemas.ShowBlog], tags=['blogs'])
+@router.get('/blog', response_model=List[schemas.ShowBlog])
 def all(db: Session = Depends(get_db)):
     return blog.get_all(db)
 

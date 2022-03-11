@@ -6,7 +6,7 @@ from repository import user
 
 
 router = APIRouter(
-    tags=['users']
+    tags=['Users']
 )
 
 @router.post('/user', response_model=schemas.ShowUser)
