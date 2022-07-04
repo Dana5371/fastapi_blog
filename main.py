@@ -36,9 +36,6 @@ class Blog(BaseModel):
     published: Optional[bool]
 
 
-
-
-
 @app.post('/blog')
 def create_blog(blog: Blog):
     return blog
